@@ -1,0 +1,141 @@
+// Data sertifikat. File PDF dan gambar pratinjau ada di /public/sertifikat/<slug>.pdf, <slug>-1.webp (sertifikat), <slug>-2.webp (daftar materi).
+// Sertifikat dengan satu halaman (tanpa daftar materi) cukup memakai halaman: 1 dan materi: [], serta penerbit sendiri bila bukan Gunadarma.
+// Untuk menambah sertifikat: salin PDF-nya ke public/sertifikat, buat dua gambar pratinjau, lalu tambahkan satu objek di bawah.
+export const certIssuer = "Universitas Gunadarma";
+export const certCategories = ["Data & AI", "Web", "Database", "Jaringan", "Sistem Operasi"];
+
+export const certificates = [
+  {
+    slug: "bnsp-data-engineer", no: "62019 2511 5 0026021 2026", kategori: "Data & AI", level: "Madya",
+    jenis: "Sertifikat Kompetensi BNSP",
+    penerbit: "BNSP · LSP Universitas Gunadarma",
+    noReg: "DSC.705.01126.2026", berlaku: "3 tahun (sampai 15 Juli 2029)",
+    halaman: 1,
+    judul: "Okupasi Insinyur Data Madya (Bidang Artificial Intelligence)", judulEn: "Occupation of Associate Data Engineer (Artificial Intelligence)",
+    waktu: "15 Juli 2026", terbit: "2026-07-15", terbitLabel: "15 Juli 2026",
+    materi: [],
+  },
+  {
+    slug: "html5", no: "426191", kategori: "Web", level: null,
+    judul: "Membangun Website Menggunakan HTML 5", judulEn: "Building Website using HTML 5",
+    waktu: "02 Juli 2026", terbit: "2026-07-02", terbitLabel: "02 Juli 2026",
+    materi: [
+      ["Pengantar HTML 5: Heading, paragraph, table, list", "Introduction of HTML5: Headings, paragraphs, table, list"],
+      ["Elemen-elemen HTML 5: Audio, video, section, article tags", "Element of HTML5: Audio, video, section, article tags"],
+      ["Canvas HTML5: Membuat thick lines, thin lines, circles, square", "Canvas HTML5: How to make thick lines, thin lines, circles, square"],
+      ["Membuat website sederhana dengan HTML 5", "Make a simple website using HTML 5"],
+    ],
+  },
+  {
+    slug: "basisdata-lanjut", no: "774776", kategori: "Database", level: "Lanjut",
+    judul: "Sistem Basisdata Lanjut", judulEn: "Advanced Database Systems",
+    waktu: "25 Mei - 06 Juni 2026", terbit: "2026-06-06", terbitLabel: "06 Juni 2026",
+    materi: [
+      ["Desain database relasional - pemetaan relasional", "Relational database design to mapping relational"],
+      ["Perintah SQL (lanjut)", "Advanced SQL"],
+      ["Integrasi data", "Data integration"],
+      ["Memonitor penggunaan database", "Monitoring database"],
+    ],
+  },
+  {
+    slug: "dasar-basisdata", no: "277730", kategori: "Database", level: "Dasar",
+    judul: "Dasar-Dasar Sistem Basisdata", judulEn: "Fundamentals of Database Systems",
+    waktu: "22 - 27 September 2025", terbit: "2025-09-27", terbitLabel: "27 September 2025",
+    materi: [
+      ["Model data konseptual", "Conceptual data modeling"],
+      ["Desain database", "Database design"],
+      ["Model data relasional", "Relational data model"],
+      ["Perintah dasar SQL", "Basic SQL"],
+    ],
+  },
+  {
+    slug: "linux-menengah", no: "766696", kategori: "Sistem Operasi", level: "Menengah",
+    judul: "Admin Linux Server Tingkat Menengah", judulEn: "Intermediate Linux Server Administration",
+    waktu: "Agustus 2025", terbit: "2025-08-18", terbitLabel: "18 Agustus 2025",
+    materi: [
+      ["Domain Name System", "Domain Name System"],
+      ["Web Mail", "Web Mail"],
+      ["File Transfer Protocol", "File Transfer Protocol"],
+      ["Mail Server", "Mail Server"],
+      ["IP Tables", "IP Tables"],
+      ["Proxy Server", "Proxy Server"],
+      ["Manajemen Proxy Server", "Management of Proxy Server"],
+      ["SSH Secure Shell", "SSH Secure Shell"],
+    ],
+  },
+  {
+    slug: "cisco-wan", no: "509011", kategori: "Jaringan", level: "Menengah",
+    judul: "Pemrograman Jaringan untuk Wide Area Menggunakan Cisco Router untuk Tingkat Menengah", judulEn: "Wide Area Network Using Cisco Router for Intermediate",
+    waktu: "Februari 2025", terbit: "2025-02-24", terbitLabel: "24 Februari 2025",
+    materi: [
+      ["Arsitektur Wide Area Network (WAN)", "Architecture of Wide Area Network (WAN) using Cisco"],
+      ["Pengenalan subnetting dan VLSM", "Introduction of subnetting and VLSM"],
+      ["Konfigurasi protokol EIGRP", "Configuration of protocol EIGRP"],
+      ["Konfigurasi protokol OSPF", "Configuration of protocol OSPF"],
+      ["Konfigurasi NAT dan DHCP", "Configuration of NAT and DHCP"],
+      ["Konfigurasi protokol PPP", "Configuration of protocol PPP"],
+      ["Konfigurasi protokol Frame Relay", "Configuration of protocol Frame Relay"],
+      ["Keamanan menggunakan ACL", "Security using ACL"],
+    ],
+  },
+  {
+    slug: "linux-pemula", no: "035859", kategori: "Sistem Operasi", level: "Pemula",
+    judul: "Admin Linux Server untuk Tingkat Pemula", judulEn: "Linux System Administration for Beginner",
+    waktu: "Agustus 2024", terbit: "2024-08-19", terbitLabel: "19 Agustus 2024",
+    materi: [
+      ["Manajemen proses", "Process management"],
+      ["Manajemen sistem", "Management system"],
+      ["Manajemen software", "Software management"],
+      ["Back-up dan restore", "Back up and restore"],
+      ["Penggunaan TCP/IP dalam Linux server", "Using TCP/IP in Linux server"],
+      ["DHCP server", "DHCP server"],
+      ["Instalasi dan konfigurasi Samba", "Installation and configuration of Samba"],
+      ["Dasar pemrograman shell BASH", "Basic programming shell BASH"],
+    ],
+  },
+  {
+    slug: "cisco-lan", no: "762891", kategori: "Jaringan", level: null,
+    judul: "Pemrograman Jaringan untuk Lokal Area Menggunakan Cisco Router", judulEn: "Local Area Network Using Cisco Router",
+    waktu: "Februari 2024", terbit: "2024-02-19", terbitLabel: "19 Februari 2024",
+    materi: [
+      ["Arsitektur LAN", "Architecture LAN"],
+      ["Konfigurasi menggunakan Cisco IOS", "Configuration using Cisco IOS"],
+      ["Pengenalan subnetting dan CIDR", "Introduction subnetting and CIDR"],
+      ["Teori dasar routing dan switching", "Basic concept routing and switching"],
+      ["Konfigurasi static routing menggunakan Cisco router", "Config. static routing using Cisco router"],
+      ["Konfigurasi dynamic routing menggunakan Cisco router", "Config. dynamic routing using Cisco router"],
+      ["Pengenalan VLAN", "Introduction VLAN"],
+      ["Konfigurasi VLAN menggunakan Cisco Catalyst", "Configuration VLAN using Cisco Catalyst"],
+    ],
+  },
+  {
+    slug: "os-server", no: "800643", kategori: "Sistem Operasi", level: "Dasar",
+    judul: "Dasar Sistem Operasi untuk Server", judulEn: "Fundamental Server OS",
+    waktu: "Agustus 2023", terbit: "2023-08-21", terbitLabel: "21 Agustus 2023",
+    materi: [
+      ["Konsep server dan network operating system", "Server and network operating system concepts"],
+      ["Pengenalan sistem operasi Windows Server 2008", "Introduction of Windows 2008 operating system"],
+      ["Active Directory Service pada Windows Server 2008", "Active Directory Service in Windows Server 2008"],
+      ["Manajemen user, group, file dan folder pada Windows Server 2008", "User, group, file and directory management in Windows Server 2008"],
+      ["Pengenalan sistem operasi Linux Ubuntu", "Introduction of Linux Ubuntu operating system"],
+      ["Manajemen user dan group, keamanan file dan directory pada Linux Ubuntu", "User, group, file and directory management in Linux Ubuntu"],
+      ["Pengenalan sistem operasi Solaris", "Introduction of Solaris operating system"],
+      ["Manajemen user dan group, keamanan file dan directory pada Solaris", "User, group, file and directory management in Solaris operating system"],
+    ],
+  },
+  {
+    slug: "dasar-jaringan", no: "312266", kategori: "Jaringan", level: "Dasar",
+    judul: "Dasar Pemrograman Jaringan", judulEn: "Fundamental Networking",
+    waktu: "Februari 2023", terbit: "2023-02-20", terbitLabel: "20 Februari 2023",
+    materi: [
+      ["Pengenalan jaringan komputer", "Introduction of computer network"],
+      ["Model referensi OSI", "OSI references model"],
+      ["Model referensi OSI lanjut", "OSI references advance model"],
+      ["Pengenalan TCP/IP", "Introduction of TCP/IP"],
+      ["Pengenalan Packet Tracer dan LAN", "Introduction of Packet Tracer and LAN"],
+      ["Pengenalan router Cisco", "Introduction of Cisco router"],
+      ["Pengenalan router Mikrotik", "Introduction of Mikrotik router"],
+      ["Pengenalan router Juniper", "Introduction of Juniper router"],
+    ],
+  },
+];
