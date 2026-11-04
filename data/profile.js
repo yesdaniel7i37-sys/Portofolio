@@ -75,7 +75,7 @@ export const projects = [
 
 export const skills = [
   ["Pengembangan front-end", "React.js, desain web responsif, integrasi API, uji lintas browser, debugging"],
-  ["Desain UI/UX dan aplikasi", "Figma, wireframing, prototipe interaktif, riset pengguna"],
+  ["Desain UI/UX dan aplikasi", "Figma, Canva, dasar Adobe Family, wireframing, prototipe interaktif, riset pengguna"],
   ["Bahasa pemrograman", "HTML5, CSS3, JavaScript, Python"],
   ["AI dan aplikasi web", "Streamlit, transfer learning, EfficientNetB0"],
   ["Database dan jaringan", "Advanced Database Systems, Cisco Packet Tracer, dasar jaringan"],
@@ -97,6 +97,6 @@ export const languages = ["Indonesia", "Inggris"];
 // Tech stack mengikuti bagian Technical Skills di CV. Ikon: /public/tech/<nama-file>.svg
 export const techStack = [
   { title: "Programming & Front-End", icon: "layout", items: [["HTML5", "html5"], ["CSS3", "css3"], ["JavaScript", "javascript"], ["Python", "python"], ["React.js", "react"], ["Next.js", "nextjs"], ["Tailwind CSS", "tailwindcss"], ["Responsive Web Design", "responsive"]] },
-  { title: "UI/UX Design & AI Apps", icon: "pen", items: [["Figma", "figma"], ["Wireframing", "wireframing"], ["Interactive Prototyping", "prototyping"], ["Streamlit", "streamlit"], ["Transfer Learning", "transfer-learning"], ["EfficientNetB0", "efficientnet"]] },
+  { title: "UI/UX Design & AI Apps", icon: "pen", items: [["Figma", "figma"], ["Canva", "canva"], ["Adobe Family (Basic)", "adobe"], ["Wireframing", "wireframing"], ["Interactive Prototyping", "prototyping"], ["Streamlit", "streamlit"], ["Transfer Learning", "transfer-learning"], ["EfficientNetB0", "efficientnet"]] },
   { title: "Database, Network & OS", icon: "server", items: [["Advanced Database Systems", "database-adv"], ["PostgreSQL", "postgresql"], ["Cisco Packet Tracer", "packet-tracer"], ["Networking Fundamentals", "networking"], ["Linux CLI", "linux"], ["Basic Firewall & Security", "security"], ["Basic Service Management", "services"]] },
 ];
