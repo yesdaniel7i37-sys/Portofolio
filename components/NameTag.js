@@ -131,7 +131,6 @@ export default function NameTag() {
           </div>
         </div>
       </div>
-      <button type="button" className="ghost drop-btn" onClick={() => s.current.restart?.()}>Jatuhkan lagi</button>
     </div>
   );
 }
